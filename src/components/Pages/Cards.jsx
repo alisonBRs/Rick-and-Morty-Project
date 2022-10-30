@@ -1,13 +1,15 @@
-import { Card } from "./Card"
-import styles from "../CSS/cards.module.css"
-export function Cards({ magic, condition }) {
+import { Card } from "./Card";
+import styles from "../CSS/cards.module.css";
+export function Cards({ cards }) {
   return (
     <>
-      {magic && (
+      {cards && (
         <div className={styles.card_container}>
-          <Card status={condition} cards={magic} />
+          {cards?.map((card) => (
+            <Card key={card.id} card={card} />
+          ))}
         </div>
       )}
     </>
-  )
+  );
 }

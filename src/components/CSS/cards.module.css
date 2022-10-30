@@ -40,14 +40,14 @@
   margin-left: 0.5rem;
 }
 
-.alive {
+.vivo {
   background: rgb(85, 204, 68);
 }
 
-.dead {
+.morto {
   background: rgb(214, 61, 46);
 }
 
-.unknown {
+.desconhecido {
   background: rgb(128, 128, 128);
 }
